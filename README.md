@@ -1,8 +1,4 @@
-This is the team project of CSCE 638.
-
-create_emb.ipynb create an embeddings of senteces in the context and questions. create_emb-wiki-pipeline.ipynb create the embeddings for question in Squad dataset and contexts from wikipedia. create_emb-wiki-custom-input.ipynb create embeddings for custom questions and corresponding wikipedia page and also perform the unsupervised learning task as descrbed below.
-
-unsupervised.ipynb basically calcuate the disntance between the embeddings of questions and contexts and find the most similar sentence based metrics like cosine similarity and so on. unsupervised-wiki.ipynb do the same task except the context is form wikipedia.
+## This is the team project of CSCE 638 : QA system with SQuAD dataet
 
 ---
 ## To start with
@@ -29,3 +25,14 @@ curl -Lo encoder/infersent.allnli.pickle https://s3.amazonaws.com/senteval/infer
 3. Also, In `create_emb.ipynb`, you may encounter `UnicodeDecodeError` while building vocabulary, please refer to this [link](https://github.com/facebookresearch/InferSent/issues/50) to modify encoder/models.py by by adding `encoding='utf-8'`
 
 4. ccg-nlpy installation. The installation of this package can be found in the demo link above. If you encounter `JDK_HOME/JRE_HOME not determined` when installing `pyjnius`, please first check if you have `JDK_HOME/JRE_HOME` environment variable. If it still doesn't work, install `pyjnius` in conda, and then install `ccg-nlpy`. If you have any questions, contact me (Weitong Feng - harry08010@tamu.edu).
+
+## About the project
+
+create_emb.ipynb create an embeddings of senteces in the context and questions. create_emb-wiki-pipeline.ipynb create the embeddings for question in Squad dataset and contexts from wikipedia. create_emb-wiki-custom-input.ipynb create embeddings for custom questions and corresponding wikipedia page and also perform the unsupervised learning task as descrbed below.
+
+unsupervised.ipynb basically calcuate the disntance between the embeddings of questions and contexts and find the most similar sentence based metrics like cosine similarity and so on. unsupervised-wiki.ipynb do the same task except the context is form wikipedia.
+
+Folder InferSent2 contains the result trained by fastText dataset.
+If you have any questions, contact me (Shutong Jiao - stjiao13@tamu.edu).
+
+
